@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+<android.support.v7.widget.CardView
+
+    android:layout_margin="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="0dp"
+    card_view:contentPadding="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    >
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     >-->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginBottom="50dp"
+        >
+        <LinearLayout
+               android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/container_upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/create_sale_form_text_size"
+                android:text="Choose a sale display picture from camera or Choose photos from gallery"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:id="@+id/creategarrage_name"
+                android:textColorHint="@color/black"
+                android:background="@drawable/rounder_corner_text_bg"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="@dimen/create_sale_form_text_size"
+                android:drawableLeft="@drawable/ic_profile"
+                android:drawablePadding="5dp"
+                android:imeOptions="actionNext"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/creategarrage_description"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:hint="Description"
+                android:inputType="textAutoCorrect|textMultiLine|textCapSentences"
+                android:maxEms="10"
+                android:textSize="@dimen/create_sale_form_text_size"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:minLines="3"
+                android:gravity="start|left"
+                android:background="@drawable/rounder_corner_text_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/rounder_corner_text_bg"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:drawablePadding="5dp"
+                android:textSize="@dimen/create_sale_form_text_size"
+                android:imeOptions="actionNext"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:id="@+id/creategarrage_date"
+                android:focusableInTouchMode="false"
+                android:layout_weight="0.5"
+                android:drawableLeft="@drawable/ic_calender"
+                android:hint="Start Date"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:background="@drawable/rounder_corner_text_bg"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:drawablePadding="5dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:editable="false"
+                    android:textSize="@dimen/create_sale_form_text_size"
+                    android:id="@+id/creategarrage_starttime"
+                    android:focusableInTouchMode="false"
+                    android:imeOptions="actionNext"
+                    android:layout_weight="0.5"
+                    android:drawableLeft="@drawable/ic_time"
+                    android:hint="Start Time"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@drawable/rounder_corner_text_bg"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:textColorHint="@color/black"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/create_sale_form_text_size"
+                    android:editable="false"
+                    android:imeOptions="actionNext"
+                    android:layout_weight="0.5"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/creategarrage_endtime"
+                    android:drawableLeft="@drawable/ic_time"
+                    android:hint="End Time"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:backgroundTint="@color/brandColor"
+                android:padding="15dp"
+                android:textSize="@dimen/create_sale_form_text_size"
+                android:text="@string/sales_left"/>
+            <TextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounder_corner_text_bg"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_near_me_orange_24dp"
+                android:textSize="@dimen/create_sale_form_text_size"
+                android:drawableLeft="@drawable/ic_location"
+                android:layout_centerHorizontal="true"
+                android:hint="Sale location"/>
+
+            <TextView
+                android:id="@+id/select_items"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounder_corner_text_bg"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:imeOptions="actionDone"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_add_circle_outline_black_24dp"
+                android:textSize="@dimen/create_sale_form_text_size"
+                android:layout_centerHorizontal="true"
+                android:hint="Select items"/>
+            <FrameLayout
+                android:id="@+id/seller_products_container"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                />
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:dividerHeight="7dp"
+                android:scrollbars="none"
+                android:paddingLeft="@dimen/space"
+                android:paddingRight="@dimen/space"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v7.widget.CardView>
+
+      <!--  <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/creategarrage_additem"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/darkorange"
+            android:textAllCaps="false"
+            android:textAppearance="@style/MediumText"
+            android:textSize="@dimen/create_sale_form_text_size"
+            android:text="Publish"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />-->
+    <android.support.v7.widget.CardView
+        card_view:cardPreventCornerOverlap="false"
+        android:layout_width="match_parent"
+        android:gravity="bottom|right"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        card_view:cardCornerRadius="2dp"
+        app:cardElevation="3dp"
+        android:id="@+id/user_commu_content"
+        >
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_bar"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/new_item"
+                android:layout_width="match_parent"
+                android:layout_weight=".5"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/MediumText"
+                android:textColor="@color/white"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:background="@drawable/button_item_detail"
+                android:text="New Item"/>
+            <Button
+                android:id="@+id/publish"
+                android:layout_weight=".5"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/MediumText"
+                android:textColor="@color/white"
+                android:background="@drawable/button_item_detail"
+                android:textSize="16sp"
+                android:layout_marginRight="2dp"
+                android:text="Publish"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
+<!--    </FrameLayout>-->
+
+

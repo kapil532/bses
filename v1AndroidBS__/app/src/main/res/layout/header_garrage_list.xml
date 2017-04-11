@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardPreventCornerOverlap="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location"
+                android:text="Location"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="12dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sale_header_title_text_size"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 Mayers PL,Melbourne VIC 3000 Australia."
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/sale_header_title_text_size"
+                android:id="@+id/hgl_address1"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sale Duration"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="12dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sale_header_title_text_size"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st August"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/sale_header_subtitile_text_size"
+                android:id="@+id/hgl_date"
+                android:layout_gravity="center_vertical"/>
+         
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sale Dutation"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hgl_date"
+                android:text="Date"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:id="@+id/hgl_clock"
+            android:src="@drawable/clock"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Location"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hgl_address1"
+                android:text="Address line 1"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:id="@+id/hgl_location"
+            android:src="@drawable/location"/>
+    </LinearLayout>
+-->
+</LinearLayout>

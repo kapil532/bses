@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <com.langoor.app.blueshak.Messaging.helper.CircleImageView
+        android:id="@+id/profile_pic"
+        android:background="@drawable/profile_pic"
+        android:layout_width="@dimen/contactlist_profilepic_size"
+        android:layout_height="@dimen/contactlist_profilepic_size"
+        android:layout_margin="@dimen/contactlist_profilepic_margin"
+
+        />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manu hdasfksadoisahdiosadosajdoisjK R"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/contactlist_textsize"
+        android:layout_alignTop="@+id/profile_pic"
+
+        android:layout_toLeftOf="@+id/message_timestamp"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i think if you live in a black and white nk if you,uafopsajoiasud0sjdsjd;oskj  "
+        android:id="@+id/last_text_message"
+        android:layout_below="@+id/contact_name"
+        android:singleLine="true"
+        android:textSize="@dimen/contactlist_last_text_size"
+        android:layout_toLeftOf="@+id/unread_count"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic" />
+    <!--    android:layout_toLeftOf="@+id/unread_count"
+        android:layout_toStartOf="@+id/unread_count"-->
+    <!-- android:layout_toStartOf="@+id/unreadcount"
+     android:layout_toLeftOf="@+id/unreadcount"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mar 5:15pm"
+        android:layout_marginRight="@dimen/contactlist_ctimestamp_margin_right"
+        android:textSize="@dimen/contactlist_timestamp_text_size"
+        android:id="@+id/message_timestamp"
+
+        android:layout_alignBottom="@+id/contact_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/unread_count"
+        android:layout_width="@dimen/unreadcount_width"
+        android:layout_height="@dimen/unreadcount_height"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:text="5"
+        android:background="@drawable/bg_circle_unread_count"
+        android:layout_below="@+id/message_timestamp"
+        android:layout_alignRight="@+id/message_timestamp"
+        android:layout_alignEnd="@+id/message_timestamp" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/report_a_bug_fragment_content_ev"
+        android:layout_width="match_parent"
+        android:hint="Please type here"
+        android:layout_margin="22dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton_setDisplay"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/brandColor"
+        android:maxEms="20">
+
+    </EditText>
+
+</LinearLayout>

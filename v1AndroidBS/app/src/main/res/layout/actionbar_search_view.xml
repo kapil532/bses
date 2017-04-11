@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill_horizontal"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/view3"
+            app:cardElevation="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/imageView3"
+                            android:src="@drawable/ic_search_white_24dp"
+                            >
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Search"
+
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/filter_tag"
+                            android:singleLine="true"
+                            android:textSize="14sp"
+                            android:gravity="center_vertical"
+                            />
+
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        style="?attr/actionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:focusable="true" >
+
+    &lt;!&ndash;    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_horizontal" >&ndash;&gt;
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/ic_search_black_24dp"
+                android:id="@+id/imageView" />
+            <TextView
+                android:id="@+id/search_query"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="Search Blueshak"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+
+        &lt;!&ndash;</FrameLayout>&ndash;&gt;
+
+    </LinearLayout >-->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+       <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/search"
+        android:orderInCategory="100"
+           app:showAsAction="ifRoom"
+         />
+       <item
+           android:id="@+id/notification"
+           android:title="Notifications"
+           android:icon="@drawable/noti"
+           android:orderInCategory="101"
+           app:showAsAction="ifRoom"
+           />
+       <item
+           android:id="@+id/mark"
+           android:title="Bookmarks"
+           android:icon="@drawable/mark"
+           android:orderInCategory="103"
+           app:showAsAction="ifRoom"
+           />
+       <item
+           android:id="@+id/mail"
+           android:title="Messages"
+           android:icon="@drawable/mail"
+           android:orderInCategory="104"
+           app:showAsAction="ifRoom"
+           />
+       <item
+           android:id="@+id/message_to_admin"
+           android:title="Message to Admin"
+           android:icon="@drawable/mail"
+           android:orderInCategory="105"
+           app:showAsAction="never"
+           />
+</menu>

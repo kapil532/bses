@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.langoor.app.blueshak.garage.AddItems"
+    tools:showIn="@layout/activity_additems"
+
+    >
+
+    <ListView
+        android:id="@+id/additem_listview"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="5dp"
+        android:footerDividersEnabled="true"
+        android:layout_above="@+id/terms_conditions_frame" />
+<!--
+    <Button
+        android:id="@+id/additem_startsale"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/darkorange"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:text="@string/startsale"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />-->
+    <LinearLayout
+        android:id="@+id/terms_conditions_frame"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/additem_startsale"
+        android:layout_marginLeft="22dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#CC000000"
+            />
+
+        <TextView
+            android:id="@+id/termsOfAgreement"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="I agree to the Terms and Conditions."
+            android:textColor="#CC000000"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/additem_startsale"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@color/darkorange"
+        android:textAllCaps="false"
+        android:textAppearance="@style/MediumText"
+        android:text="Publish"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

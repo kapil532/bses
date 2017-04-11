@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:setPreventCornerOverlap="false"
+    card_view:cardCornerRadius="0dp"
+    card_view:contentPadding="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/item_row_list_image_iv"
+        android:layout_width="@dimen/add_item_image_size"
+        android:layout_height="@dimen/add_item_image_size"
+        android:background="@drawable/placeholder_background"
+
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/radio_button_lay"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/item_row_list_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IPhone 6"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/contactlist_textsize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/last_text_message"
+            android:layout_toRightOf="@+id/profile_pic"
+            android:layout_toEndOf="@+id/profile_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price $1000"
+            android:id="@+id/item_row_list_price_tv"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/contactlist_last_text_size"
+            android:textColor="@color/black"
+            android:layout_alignBottom="@+id/profile_pic"
+            android:layout_alignLeft="@+id/contact_name"
+            android:layout_alignStart="@+id/contact_name" />
+        <!-- android:layout_toStartOf="@+id/unreadcount"
+         android:layout_toLeftOf="@+id/unreadcount"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/contactlist_ctimestamp_margin_right"
+            android:textSize="@dimen/contactlist_timestamp_text_size"
+            android:id="@+id/item_row_list_availability_tv"
+            android:text="Available"
+            android:textColor="@color/black"
+            android:layout_alignBottom="@+id/contact_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <ImageView
+                android:id="@+id/list_row_item_delete_iv"
+                android:layout_marginRight="10dp"
+                android:layout_width="@dimen/product_list_row_item_icon_size"
+                android:layout_height="@dimen/product_list_row_item_icon_size"
+                android:src="@drawable/ic_delete"/>
+          <ImageView
+                android:id="@+id/list_row_item_share_iv"
+
+                android:layout_marginRight="10dp"
+                android:layout_width="@dimen/product_list_row_item_icon_size"
+                android:layout_height="@dimen/product_list_row_item_icon_size"
+                android:src="@drawable/ic_share_black_product_share_24dp"/>
+
+        </LinearLayout>
+
+      <!--  <TextView
+            android:id="@+id/unread_count"
+            android:layout_width="@dimen/unreadcount_width"
+            android:layout_height="@dimen/unreadcount_height"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="Available"
+            android:text
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_circle"
+            android:layout_below="@+id/message_timestamp"
+            android:layout_alignRight="@+id/message_timestamp"
+            android:layout_alignEnd="@+id/message_timestamp" />-->
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+ </android.support.v7.widget.CardView>

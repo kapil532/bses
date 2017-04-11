@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.langoor.app.blueshak.item.MakeOffersActivty"
+    tools:showIn="@layout/activity_make_offers_activty">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/product_image"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:id="@+id/product_image_overlay"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_height="50dp"
+        android:background="@drawable/text_round_corner"
+        android:padding="10dp"
+        android:hint="AUD"
+        android:inputType="number|numberDecimal"
+        android:maxLength="6"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:id="@+id/offer_price"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/make_offer_"
+        android:layout_weight="1"
+        android:layout_width="300dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/MediumText"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+
+        android:background="@drawable/button_item_detail"
+        android:text="Make offer"
+        android:layout_marginBottom="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Enetr your offer for Reduce sound proof European 95 block out Bike"
+        android:id="@+id/offer_text"
+        android:layout_below="@+id/offer_price"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/delete_sale" />
+    <item android:title="@string/end_sale" />
+    <item android:title="@string/Edit_Sale" />
+    <item android:id="@+id/move_to_multiple"
+        android:title="@string/move_to_multiple" />
+    <item android:title="@string/reschedule_sale" />
+
+
+
+</menu>

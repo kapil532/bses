@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Blueshak</string>
+
+    <!--Network Static messages-->
+    <string name="NetworkError">No Network Available</string>
+    <string name="ServerError">Server Response Timeout</string>
+    <string name="AuthFailedError">Server Authentication Failed</string>
+    <string name="ParseError">Parsing Error</string>
+    <string name="NoConnectionError">No Connection available to Host</string>
+    <string name="TimeOutError">Server Timeout Error</string>
+    <string name="ErrorResponseData">Error Response Data</string>
+
+    <string name="no_items_found">No Items Found Near You</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="loading">Loading ...</string>
+    <string name="notifications">Notifications</string>
+    <string name="myBookmarks">My Bookmarks</string>
+    <string name="messages">Messages</string>
+    <string name="mySales">My Sales</string>
+    <string name="startAGarageSale">Start a Garage Sale</string>
+    <string name="startMultipleItemsSale">Start Multiple Items Sale</string>
+    <string name="myProfile">My Profile</string>
+    <string name="save">Save</string>
+
+    <string name="upgradeSubscription">Upgrade Subscription</string>
+    <string name="viewTutorial">View Tutorial</string>
+    <string name="support">Support</string>
+    <string name="reportABug">Report a Bug</string>
+    <string name="signOut">Sign Out</string>
+
+    <string name="similarProducts">Related Listing</string>
+
+    <string name="shipable">Shippable</string>
+    <string name="pickup">Pick up</string>
+    <string name="non_shipable">Not Shippable</string>
+    <string name="negotiable">Negotiable</string>
+    <string name="non_negotiable">Non Negotiable</string>
+    <string name="available">Available</string>
+    <string name="not_available">Not Available</string>
+
+    <string name="markAsInappropirate"><u>Mark as Inappropriate</u></string>
+    <string name="itemsForSale">Items For Sale</string>
+    <string name="milesAway">Away</string>
+
+
+    <string name="createSale">Create Sale</string>
+
+    <string name="buyer">Buyer</string>
+    <string name="seller">Seller</string>
+    <string name="garageSale">Garage Sale</string>
+    <string name="multipleSale">Multiple Sale</string>
+    <string name="item">Item</string>
+
+    <string name="upgrade">Free for 4 weeks, to continue more than 4 weeks please Upgrade</string>
+    <string name="sales_left">You can add up to 10 products per sale, 50 product left overall.</string>
+    <string name="logout">Do you really want to Logout ?</string>
+    <string name="appExitText">Do you want to cancel the sale?</string>
+
+    <string name="startsale">Create Sale</string>
+    <string name="additem">Add More Items</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+
+      <string name="permission_rationale">Contacts permissions are needed for providing email
+        completions.
+    </string>
+    <!--<string name="facebook_app_id">645536408947810</string>-->
+
+    <string name="facebook_app_id">1753514361569070</string>
+
+    <string name="chat_input_hint">Type a message</string>
+    <string name="no_messages">No messages</string>
+
+    <string name="no_recent_chats">No Recent Chats</string>
+
+    <!-- Used in app/dialog examples -->
+    <string-array name="select_bookmark_options">
+        <item>Delete</item>
+        <item>View</item>
+    </string-array>
+    <!-- Used in app/dialog examples -->
+    <string-array name="select_dialog_items">
+        <item>Click a picture from camera</item>
+        <item>Choose from gallery</item>
+    </string-array>
+    <!-- Used in app/dialog examples -->
+    <string-array name="select_ratings_items">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="title_activity_reviews_ratings">Reviews</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="delete_sale">Delete Sale</string>
+    <string name="Edit_Sale">Edit Sale</string>
+    <string name="end_sale">End Sale</string>
+    <string name="reschedule_sale">Reschedule Sale</string>
+    <string name="move_to_multiple">Move to Multiple Item</string>
+    <string name="alert_dialog_text_entry">Report a bug</string>
+    <string name="delete_bookmark">Delete</string>
+    <string name="view_product">View</string>
+    <string name="positive_button_text">Submit</string>
+    <string name="title_activity_terms_conditions">Help Center</string>
+    <string name="title_activity_profile_edit">Profile Edit</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_review_thank_you">Thank You</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_bookmark">My Bookmarks</string>
+    <string name="title_activity_list">List</string>
+    <string name="title_activity_item_detail">Listing Details</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pick_location">Location</string>
+    <string name="title_activity_report_listing">Report Listing</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_image_view_activty">Listing Details</string>
+    <string name="title_activity_make_offers_activty">Make Offer</string>
+    <string name="title_activity_shop">ShopActivity</string>
+    <string name="title_activity_settings_activty">Settings</string>
+    <string name="title_activity_book_mark_activty">My Wishlist</string>
+    <string name="title_activity_filter">Filter</string>
+    <string name="location_update_request">Please enable the GPS location to update the best products near you</string>
+    <!--<string name="profile_edit_text">Become a verified user above- this shows other Blueshak you 're the real deal! Once verified, you'll receive a special avatar.</string>-->
+    <!--<string name="profile_edit_text_next_line">Blueshak will only use your phone number or facebook details to verify your identity and we will not share them with anyone else.</string>-->
+    <!-- <string name="zipcode_code">Use a Zipcode to confirm your location</string>-->
+    <string name="list_item">Sell An Item</string>
+    <string name="create_sale">Create Garage Sale</string>
+    <string name="cancel">Cancel</string>
+    <string name="item_listed">Item Listed</string>
+    <string name="item_updated">Item Updated</string>
+    <string name="item_updated_message">Item has been updated Successfully.</string>
+    <string name="item_listed_message">Item has been listed Successfully.</string>
+    <string name="title_activity_my_items">Add Items</string>
+    <string name="title_activity_chat_activty">ChatActivty</string>
+    <string name="title_activity_view">Image</string>
+    <string name="title_activity_add_rating">Review</string>
+</resources>

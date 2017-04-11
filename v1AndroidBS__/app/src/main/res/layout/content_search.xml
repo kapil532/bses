@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.langoor.app.blueshak.search.SearchActivity"
+    tools:showIn="@layout/activity_search"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+  >
+    <EditText
+        android:id="@+id/searchViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:imeOptions="actionDone"
+        android:visibility="gone"
+        android:hint="Search for any product"
+        android:textSize="16sp"
+        android:drawableRight="@drawable/ic_search_block_24dp"
+        android:backgroundTint="@color/brandColor"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="No Products Found"
+       android:visibility="gone"
+        android:textSize="16sp"
+        android:id="@+id/no_label"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+<!--    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Searh_List"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/searchViewResult" />-->
+
+   <!-- <ListView
+        android:id="@+id/Searh_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/searchViewResult"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="5dp"
+        android:footerDividersEnabled="true" />-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:dividerHeight="7dp"
+        android:scrollbars="none"
+        android:layout_alignRight="@+id/sales_list_fragment_list_view"
+        android:layout_alignEnd="@+id/sales_list_fragment_list_view"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/space"
+        android:paddingRight="@dimen/space"
+        android:layout_alignParentTop="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="No products found your search"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:id="@+id/no_search"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <!--<tv.accedo.itnsconnect.view.CircleImageView
+         android:id="@+id/profile_pic"
+         android:layout_width="@dimen/chatview_target_profilepic_size"
+         android:layout_height="@dimen/chatview_target_profilepic_size"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="@dimen/chatview_target_profilepic_rightmargin"
+         />-->
+    <com.langoor.app.blueshak.helper.RoundedImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="@dimen/chatview_target_profilepic_size"
+        android:layout_height="@dimen/chatview_target_profilepic_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/chatview_target_profilepic_rightmargin"
+        android:src="@drawable/profile_pic"
+
+        >
+    </com.langoor.app.blueshak.helper.RoundedImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_pic"
+
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_pic"
+            android:background="@drawable/offer_image"
+            android:padding="5dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/message_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/chatview_textsize"
+                android:text="hi how r u"
+                android:maxWidth="@dimen/received_message_layout_maxwidth"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/message_timestamp"
+                android:layout_width="wrap_content"
+                android:text="5:15pm"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/chatview_timestamp_textsize"
+                android:maxWidth="@dimen/received_message_layout_maxwidth"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+
+            card_view:cardPreventCornerOverlap="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_pic"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="@dimen/chatview_product_image_height_size"
+                    android:layout_height="@dimen/chatview_product_image_height_size"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/chatview_target_profilepic_rightmargin"
+                    android:src="@drawable/profile_pic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/chatview_textsize"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="IPhone"
+                    android:maxWidth="@dimen/received_message_layout_maxwidth"
+                    android:textColor="@color/tab_selected"
+                    />
+
+                <ImageView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="5:15pm"
+                    android:src="@drawable/ic_keyboard_arrow_right_orange_24dp"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

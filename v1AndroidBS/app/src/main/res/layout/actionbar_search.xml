@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill_horizontal"
+    android:background="@color/brandColor"
+    android:orientation="vertical">
+    <EditText
+             android:id="@+id/searchViewResult"
+             android:layout_width="match_parent"
+
+             android:imeOptions="actionSearch"
+             android:inputType="text"
+             android:singleLine="true"
+             android:layout_height="50dp"
+             android:focusable="true"
+             android:layout_margin="5dp"
+             android:hint="Search for Listings"
+             android:textSize="16sp"
+             android:textColorHint="@color/white"
+             android:drawableRight="@drawable/ic_search_white_24dp"
+             android:backgroundTint="@color/brandColor"
+             android:textColor="@color/white"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        style="?attr/actionButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:focusable="true" >
+
+    &lt;!&ndash;    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_horizontal" >&ndash;&gt;
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/ic_search_black_24dp"
+                android:id="@+id/imageView" />
+            <TextView
+                android:id="@+id/search_query"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="Search Blueshak"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+
+
+        &lt;!&ndash;</FrameLayout>&ndash;&gt;
+
+    </LinearLayout >-->

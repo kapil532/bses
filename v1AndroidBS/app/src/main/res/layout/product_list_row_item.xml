@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:setPreventCornerOverlap="false"
+    card_view:cardCornerRadius="0dp"
+    card_view:contentPadding="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/item_row_list_image_iv"
+        android:layout_width="@dimen/add_item_image_size"
+        android:layout_height="@dimen/add_item_image_size"
+        android:background="@drawable/placeholder_background"
+
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--   <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/Bookmark_2"
+               android:id="@+id/bookmark"
+               android:layout_marginRight="15dp"
+               android:layout_alignParentRight="true"
+               android:layout_gravity="right" />-->
+
+        <LinearLayout
+            android:id="@+id/radio_button_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_row_list_name_tv"
+                android:layout_width="415dp"
+                android:layout_height="wrap_content"
+                android:text="IPhone 6"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/last_text_message"
+                android:layout_toRightOf="@+id/profile_pic"
+                android:layout_toLeftOf="@+id/profile_pic"
+                android:layout_toEndOf="@+id/profile_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price $1000"
+                android:id="@+id/item_row_list_price_tv"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_alignBottom="@+id/profile_pic"
+                android:layout_alignLeft="@+id/contact_name"
+                android:layout_alignStart="@+id/contact_name" />
+            <!-- android:layout_toStartOf="@+id/unreadcount"
+             android:layout_toLeftOf="@+id/unreadcount"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/contactlist_ctimestamp_margin_right"
+                android:textSize="15sp"
+                android:id="@+id/item_row_list_availability_tv"
+                android:text="Available"
+                android:textColor="@color/black"
+                android:layout_alignBottom="@+id/contact_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/shippable_content"
+                    android:layout_toStartOf="@+id/shippable_content"
+                    >
+                    <ImageView
+                        android:id="@+id/list_row_item_sale_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:id="@+id/garage_sale_name"
+                        android:text="Garage Sale"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/shippable_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/pick_up_content"
+                    android:layout_toStartOf="@+id/pick_up_content">
+                    <ImageView
+                        android:id="@+id/list_row_item_delivery_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        android:layout_marginRight="12dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:id="@+id/shippable_sale_name"
+                        android:text="Shippable"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/pick_up_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/list_row_item_pick_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="20dp"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:id="@+id/pick_up_name"
+                        android:text="Pick Up"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+</android.support.v7.widget.CardView>

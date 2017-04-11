@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="0dp"
+    card_view:contentPadding="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/close_button"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_clear_black_24dp"
+            android:layout_alignParentRight="true"
+
+            />
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+        <TextView
+            android:layout_width="329dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sign_up_text_size"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="We have sent you OTP code to verify your phone number" />
+
+        <!--<ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/app_logo" />-->
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/etEmail"
+            android:layout_width="@dimen/width_for_signup"
+            android:textSize="@dimen/sign_up_text_size"
+            android:layout_height="@dimen/signup_height_editbo"
+            android:hint="OTP"
+            android:background="@drawable/edittext_shadow"
+            android:inputType="number"
+            android:padding="@dimen/padding_signup"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#bbbbbb"
+            android:textStyle="normal" />
+        <TextView
+            android:layout_width="329dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/sign_up_text_size"
+            android:textColor="@color/black"
+            android:text="Didn't receive one? Get another."
+            android:id="@+id/otp_get_another" />
+        <TextView
+            android:layout_width="329dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sign_up_text_size"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Entered the wrong number? Try again."
+            android:id="@+id/otp_try_again" />
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="215dp"
+            android:layout_marginTop="12dp"
+            android:layout_height="@dimen/login_btn_height"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sign_up_text_size"
+            android:background="@color/darkorange"
+            android:text="Verify" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

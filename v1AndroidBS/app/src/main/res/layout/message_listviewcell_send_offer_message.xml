@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <com.langoor.app.blueshak.helper.RoundedImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="@dimen/chatview_target_profilepic_size"
+        android:layout_height="@dimen/chatview_target_profilepic_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/chatview_target_profilepic_rightmargin"
+
+        >
+
+    </com.langoor.app.blueshak.helper.RoundedImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_pic"
+
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/profile_pic"
+        android:layout_toStartOf="@+id/profile_pic"
+        ><LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/offer_image"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+       >
+
+        <TextView
+            android:id="@+id/message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/sent_message_layout_maxwidth"
+            android:text="hi how r u"
+            android:textSize="@dimen/chatview_textsize"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/message_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_body"
+            android:textSize="@dimen/chatview_timestamp_textsize"
+            android:text="5:15pm"
+            android:maxWidth="@dimen/sent_message_layout_maxwidth"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+        <android.support.v7.widget.CardView
+
+            card_view:cardPreventCornerOverlap="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            card_view:cardCornerRadius="2dp"
+           >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_pic"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="@dimen/chatview_product_image_height_size"
+                android:layout_height="@dimen/chatview_product_image_height_size"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/chatview_target_profilepic_rightmargin"
+                android:src="@drawable/profile_pic"
+
+                />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/chatview_textsize"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="IPhone"
+                android:maxWidth="@dimen/received_message_layout_maxwidth"
+                android:textColor="@color/tab_selected"
+                />
+
+            <ImageView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="5:15pm"
+                android:src="@drawable/ic_keyboard_arrow_right_orange_24dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+        <com.langoor.app.blueshak.helper.RoundedImageView
+            android:id="@+id/seller_image"
+            android:layout_margin="10dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+           >
+        </com.langoor.app.blueshak.helper.RoundedImageView>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/product_detail_name_tv"
+            android:layout_width="match_parent"
+            android:layout_gravity="left|center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textAppearance="@style/LargeText"
+            android:textColor="@color/black"
+        android:text="HP Laptopkj"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".5"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center"
+                android:src="@drawable/ic_rating_off"
+                android:id="@+id/rating_image1"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center"
+                android:src="@drawable/ic_rating_off"
+                android:id="@+id/rating_image2"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center"
+                android:src="@drawable/ic_rating_off"
+                android:id="@+id/rating_image3"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center"
+                android:src="@drawable/ic_rating_off"
+                android:id="@+id/rating_image4"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center"
+                android:src="@drawable/ic_rating_off"
+                android:id="@+id/rating_image5"/>
+        </LinearLayout>
+    <RatingBar
+
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:rating="5"
+        />
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/MediumText"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Genuine Product"/>
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/MediumText"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:text="sfsfsfsfsf"/>
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

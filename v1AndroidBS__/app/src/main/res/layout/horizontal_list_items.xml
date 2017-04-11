@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/horizontalListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/similarProducts"
+
+        android:textColor="@color/black"
+        android:textAppearance="@style/MediumText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <!-- <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontalListItems"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+       />-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontalListItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:dividerHeight="7dp"
+            android:scrollbars="none"
+            android:layout_alignRight="@+id/sales_list_fragment_list_view"
+            android:layout_alignEnd="@+id/sales_list_fragment_list_view"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/space"
+            android:paddingRight="@dimen/space"/>
+      <!--  <org.lucasr.twowayview.TwoWayView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/horizontalListItems"
+            style="@style/TwoWayView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false"
+            tools:context=".MainActivity" />-->
+    </LinearLayout>
+
+
+</LinearLayout>
+
